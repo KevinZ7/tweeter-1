@@ -1,0 +1,27 @@
+.new-tweet{
+  background-color: #eee;
+  border-radius: 5px;
+  border: 1px solid #708090;
+}
+
+.new-tweet .title{
+  margin: 10px;
+  color: #244751;
+  border-bottom: 1px solid black;
+}
+
+.new-tweet .form{
+  padding: 10px;
+}
+
+.new-tweet .form #text{
+  width: 100%;
+}
+
+.new-tweet .form .counter{
+  float: right;
+  padding-top: 5px;
+  padding-right: 7px;
+  color: #244751;
+  font-style: italic;
+}

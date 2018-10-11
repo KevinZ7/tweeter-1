@@ -2,6 +2,7 @@
   background-color: #eee;
   border-radius: 5px;
   border: 1px solid #708090;
+  margin-bottom: 10px;
 }
 
 .new-tweet .title{
@@ -24,4 +25,14 @@
   padding-right: 7px;
   color: #244751;
   font-style: italic;
+}
+
+#alert{
+  width: auto;
+  margin-bottom: 2px;
+  text-align: center;
+  background-color: white;
+  border-radius: 5px;
+  color: red;
+  border: 1px solid red;
 }

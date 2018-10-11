@@ -35,4 +35,5 @@ body {
   margin: auto;
   background-color: #FFFFFF;
   padding: 30px;
+  overflow: auto;
  }

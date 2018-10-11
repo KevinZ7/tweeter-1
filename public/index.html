@@ -15,13 +15,15 @@
     <link rel="stylesheet" href="/styles/nav.css" type="text/css"
     />
 
-    <link rel="stylesheet" type="text/css" href="/styles/new-tweet.css">
+    <link rel="stylesheet" type="text/css" href="/styles/new-tweet.css"/>
+    <link rel="stylesheet" type="text/css" href="/styles/tweet-feed.css"/>
 
     <!-- External JS -->
     <script type="text/javascript" src="/vendor/jquery-2.2.3.min.js"></script>
 
     <!-- App JS -->
-    <script type="text/javascript" src="/scripts/app.js"></script>
+    <script type="text/javascript" src="/scripts/conposer-char-counter.js"></script>
+    <script type="text/javascript" src="/scripts/tweet-hover-state.js"></script>
   </head>
 
   <body>
@@ -30,19 +32,25 @@
     <nav id="nav-bar">
       <img class="logo" src="/images/bird.png">
       <span class="header">Tweeter</span>
+      <div id="form-toggle">Compose</div>
     </nav>
 
     <!-- Page-specific (main) content here -->
     <main class="container">
-      <section class="new-tweet">
+      <section class="new-tweet" id="tweet-form-section">
         <h2 class="title">Compose Tweet</h2>
-        <form action="/tweets/" method="POST" class="form">
+        <form action="/tweets/" method="POST" class="form" id="tweet-form">
           <textarea name="text" placeholder="What are you humming about?" id="text"></textarea>
-          <input type="submit" value="Tweet">
-          <span class="counter">140</span>
+          <div id="alert"></div>
+          <input type="submit" value="Tweet" id="send">
+          <span class="counter" id="counter">140</span>
         </form>
       </section>
+      <section class="tweet-container">
+      </section>
     </main>
+
+    <script type="text/javascript" src="/scripts/app.js"></script>
 
   </body>
 </html>
